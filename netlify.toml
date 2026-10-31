@@ -1,0 +1,41 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+# Keep both .ir host variants as aliases, then permanently canonicalize to .com.
+[[redirects]]
+  from = "http://scalpyasamin.ir/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://scalpyasamin.ir/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.scalpyasamin.ir/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.scalpyasamin.ir/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
+
+# Canonicalize the .com www alias as well.
+[[redirects]]
+  from = "http://www.scalpyasamin.com/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.scalpyasamin.com/*"
+  to = "https://scalpyasamin.com/:splat"
+  status = 301
+  force = true
